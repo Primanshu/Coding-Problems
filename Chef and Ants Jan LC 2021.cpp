@@ -20,7 +20,7 @@ const int mxn=1e6;
 
 void tc() {
 	int n; cin>>n;
-	//d[distance from O] = ant_no
+	//d[distance from O] = {ant_no,....}
 	map<int,vc<int>> d;
 	int ant_no = 1;
 	vc<pair<int,pair<int,int>>> v;
