@@ -54,7 +54,7 @@ void tc() {
 	}
 
 	int ans = 0;
-	//count all the collisions occuring at point O
+	//count all the collisions occuring at point O + all collision occuring at other points
 
 	for(auto el : d) {
 		int dist = el.first;
@@ -92,11 +92,6 @@ void tc() {
 		ans++;
 	}
 
-	//the remaining ants, do not collide at point O, 
-	// but will collide at other points on the same line
-	for(int line_no = 1; line_no<=n; line_no++) {
-		ans += (line[line_no].first * line[line_no].second);
-	}
 	cout<<ans<<"\n";
 }
 int32_t main() {
